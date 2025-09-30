@@ -16,7 +16,7 @@ function Menu() {
 
   return (
     <div>
-      {/* زرار المينيو */}
+      {/* MENU BUTTON */}
       {!open ? (
         <Image
           src="/open2.png"
@@ -37,7 +37,7 @@ function Menu() {
         />
       )}
 
-      {/* القائمة */}
+      {/* MENU */}
       {open && (
         <div
           className="bg-amber-500 text-black absolute left-0 top-24 w-full 
