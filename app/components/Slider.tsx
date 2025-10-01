@@ -17,7 +17,7 @@ const data = [
   {
     id: 3,
     title: "The finest grills to enjoy with your family",
-    image: "/slide204.jpg",
+    image: "/slide204.jpeg",
   },
 ];
 

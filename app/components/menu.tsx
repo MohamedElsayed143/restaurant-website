@@ -16,7 +16,7 @@ function Menu() {
 
   return (
     <div>
-      {/* MENU BUTTON */}
+      {/* MENU BUTTON*/}
       {!open ? (
         <Image
           src="/open2.png"

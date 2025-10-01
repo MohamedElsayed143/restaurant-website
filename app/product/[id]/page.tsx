@@ -46,8 +46,8 @@ export default function SingleProductPage({ params }: Props) {
         <Price
           price={product.price}
           id={product.id}
-          title={product.title} // ← مهم
-          img={product.img!} // ← مهم جداً
+          title={product.title}
+          img={product.img!} 
           options={product.options}
         />
       </div>
