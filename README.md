@@ -29,4 +29,6 @@ A modern and responsive restaurant website built with **Next.js** and **Tailwind
 - **State Management**: Zustand  
 - **React Hooks**: useEffect, useState  
 - **Icons**: React Icons  
-- **Images & Optimization**: Next.js `Image` component  
+- **Images & Optimization**: Next.js `Image` component
+
+  [Demo](https://restaurant-website-wlli.vercel.app/)
