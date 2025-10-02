@@ -5,24 +5,24 @@ import {
   FaGoogle,
   FaRegEnvelope,
 } from "react-icons/fa";
-
 import { MdLockOutline } from "react-icons/md";
 
 const LoginPage = () => {
   return (
     <div
       className="flex flex-col items-center justify-center w-full flex-1
-    px-20 text-center min-h-screen py-2 bg-gray-100"
+    px-6 sm:px-10 md:px-20 text-center min-h-screen py-4 bg-gray-100"
     >
-      <div className="bg-white rounded-2xl shadow-2xl flex flex-col md:flex-row w-full max-w-4xl">
+      <div className="bg-white rounded-2xl shadow-2xl flex flex-col md:flex-row w-full max-w-4xl overflow-hidden">
         {/* SIGN IN */}
-        <div className="w-full md:w-3/5 p-5">
+        <div className="w-full md:w-3/5 p-6 sm:p-8 md:p-10 flex flex-col justify-center">
           <div className="text-left font-bold text-amber-500">Elkhadry</div>
-          <div className="py-10">
-            <h2 className="text-3xl font-bold text-amber-500 mb-2">
+          <div className="py-8 sm:py-10">
+            <h2 className="text-2xl sm:text-3xl font-bold text-amber-500 mb-2">
               Sign in to Account
             </h2>
             <div className="border-2 w-10 border-amber-500 inline-block mb-2"></div>
+
             {/* SOCIALS LOGIN */}
             <div className="flex justify-center my-2">
               <a
@@ -44,9 +44,13 @@ const LoginPage = () => {
                 <FaFacebookF className="text-sm" />
               </a>
             </div>
-            <p className="text-gray-400 my-3">Or Use Your Email Account</p>
+
+            <p className="text-gray-400 my-3 text-sm sm:text-base">
+              Or Use Your Email Account
+            </p>
+
             <div className="flex flex-col items-center">
-              <div className="bg-gray-100 w-64 p-2 flex items-center mb-3">
+              <div className="bg-gray-100 w-full sm:w-64 p-2 flex items-center mb-3 rounded">
                 <FaRegEnvelope className="text-gray-400 m-2" />
                 <input
                   type="email"
@@ -55,7 +59,8 @@ const LoginPage = () => {
                   className="bg-gray-100 outline-none text-sm flex-1"
                 />
               </div>
-              <div className="bg-gray-100 w-64 p-2 flex items-center mb-3">
+
+              <div className="bg-gray-100 w-full sm:w-64 p-2 flex items-center mb-3 rounded">
                 <MdLockOutline className="text-gray-400 m-2" />
                 <input
                   type="password"
@@ -64,18 +69,20 @@ const LoginPage = () => {
                   className="bg-gray-100 outline-none text-sm flex-1"
                 />
               </div>
-              <div className="flex justify-between w-64 mb-5">
-                <label className="flex items-center text-xs">
+
+              <div className="flex justify-between w-full sm:w-64 mb-5 text-xs">
+                <label className="flex items-center">
                   <input type="checkbox" name="remember" className="mr-1" />
                   Remember Me
                 </label>
-                <a href="#" className="text-xs">
+                <a href="#" className="text-xs text-amber-500">
                   Forgot Password?
                 </a>
               </div>
+
               <a
                 href="#"
-                className="border-2 border-amber-500 text-amber-500 rounded-full px-12
+                className="border-2 border-amber-500 text-amber-500 rounded-full px-10 sm:px-12
            py-2 inline-block font-semibold hover:bg-amber-500 hover:text-white"
               >
                 Sign In
@@ -83,20 +90,22 @@ const LoginPage = () => {
             </div>
           </div>
         </div>
+
         {/* SIGN UP */}
         <div
           className="w-full md:w-2/5 bg-amber-500 text-white 
-  rounded-b-2xl md:rounded-tr-2xl md:rounded-br-2xl 
-  py-12 md:py-36 px-6 md:px-12"
+  py-10 md:py-36 px-6 sm:px-10 md:px-12 flex flex-col items-center justify-center text-center"
         >
-          <h2 className="text-3xl font-bold mb-2">Hello, Friend!</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-2">
+            Hello, Friend!
+          </h2>
           <div className="border-2 w-10 border-white inline-block mb-2"></div>
-          <p className="mb-10">
+          <p className="mb-8 sm:mb-10 text-sm sm:text-base">
             Join us today and enjoy exclusive grilled flavors made just for you!
           </p>
           <a
             href="#"
-            className="border-2 border-white rounded-full px-12
+            className="border-2 border-white rounded-full px-10 sm:px-12
            py-2 inline-block font-semibold hover:bg-white hover:text-amber-500"
           >
             Sign Up
